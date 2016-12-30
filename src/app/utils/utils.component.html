@@ -1,0 +1,105 @@
+<div class="card-container">
+  <h3 class="mt-0">Utils API Reference</h3>
+
+  <h5 class="mt-2">HandyGridPaginator (utils.paginator)</h5>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>method</th>
+      <th>desc</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>addParams(params: HandyGridPaginatorInterface)</td>
+      <td>
+        type:
+        <pre><code>
+          &#123;
+            first?: number;
+            previous?: number;           // Previous page number
+            current?: number;            // Current page number
+            next?: number;               // Next page number
+            last?: number;               // Last page number
+            pageCountAll?: number;       // Number of pages
+            pageCountDisplay?: number;   // Number of pages max/display (buttons)
+            itemCountPerPage?: number;   // Number of items per page
+            itemCount?: number;          // Number of rows
+          &#125;
+        </code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>getItemCountPerPage()</td>
+      <td>returns number of items per page</td>
+    </tr>
+    <tr>
+      <td>getFirst()</td>
+      <td>returns page number</td>
+    </tr>
+    <tr>
+      <td>getPrevious()</td>
+      <td>returns previous page number</td>
+    </tr>
+    <tr>
+      <td>getCurrent()</td>
+      <td>returns current page number</td>
+    </tr>
+    <tr>
+      <td>getNext()</td>
+      <td>returns next page number</td>
+    </tr>
+    <tr>
+      <td>getLast()</td>
+      <td>returns last page number</td>
+    </tr>
+    <tr>
+      <td>getPageNumbers()</td>
+      <td>returns page numbers</td>
+    </tr>
+    <tr>
+      <td>process()</td>
+      <td>calculate propertis (pageCountAll, pageCountDisplay, last, next, previous)</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h5 class="mt-1">HandyGridControlParams (utils.params)</h5>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>method</th>
+      <th>desc</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>addParams(params: HandyGridControlParamsInterface)</td>
+      <td>
+        type:
+        <pre><code>
+          &#123;
+            current?: number;           // Current page number
+            itemCountPerPage?: number;  // Number of items per page
+            sortType?: number;          // sort type: 0, 1, 2
+            sortField?: string;         // sort field name
+          &#125;
+        </code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td>getParams()</td>
+      <td>returns object&#60;HandyGridControlParamsInterface&#62;</td>
+    </tr>
+    <tr>
+      <td>getParamsAsQuery()</td>
+      <td>returns string, e.g. <code>?current=2&itemCountPerPage=10&sortType=1&sortField=name</code></td>
+    </tr>
+    <tr>
+      <td>setPaginatorService(paginatorService: HandyGridPaginator)</td>
+      <td>type: HandyGridPaginator</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

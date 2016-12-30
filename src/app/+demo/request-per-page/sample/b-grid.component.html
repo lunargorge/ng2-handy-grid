@@ -1,0 +1,41 @@
+
+<div class="container-fluid m-1">
+
+  <div class="card p-1">
+    <div class="clearfix">
+      <select (change)="changeItemCountPerPage($event.target.value)" class="float-xs-right">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+      </select>
+    </div>
+
+    <!-- header -->
+    <div class="row">
+      <div *ngFor="let column of columns" class="{{column.cssClass}} header-grid"
+        (click)="sort(column)"><b>{{column.header}}</b><small>[{{column.sort.type}}]</small>
+      </div>
+    </div>
+
+    <!-- row -->
+    <b-row-user *ngFor="let row of rows" [columns]="columns" [row]="row"></b-row-user>
+
+    <!-- pagination -->
+    <nav aria-label="Page navigation" *ngIf="utils" class="m-0 text-xs-center">
+      <ul class="pagination mb-0">
+        <li class="page-item"><a (click)="paginationGetFirst()" aria-label="Previous" class="page-link">&laquo;</a></li>
+        <li class="page-item"><a (click)="paginationGetPrevious()" aria-label="Previous" class="page-link">&laquo;</a></li>
+
+        <li class="page-item" *ngFor="let pageNum of utils.paginator.getPageNumbers()"
+            [ngClass]="{'text-success': pageNum == utils.paginator.getCurrent()}">
+          <a (click)="pagination(pageNum)" class="page-link">{{pageNum}}</a>
+        </li>
+
+        <li class="page-item"><a (click)="paginationGetNext()" aria-label="Next" class="page-link">&raquo;</a></li>
+        <li class="page-item"><a (click)="paginationGetLast()" aria-label="Next" class="page-link">&raquo;</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <request-per-page-doc></request-per-page-doc>
+</div>

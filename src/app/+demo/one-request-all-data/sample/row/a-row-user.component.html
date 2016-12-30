@@ -1,0 +1,6 @@
+
+<div class="row row-grid" *ngIf="row.display">
+  <div class="{{columns[0].cssClass}}">{{row.data.name}}</div>
+  <div class="{{columns[1].cssClass}}">{{row.data.address.city.value}}</div>
+  <div class="{{columns[2].cssClass}}">{{row.data.addDate}}</div>
+</div>
