@@ -1,5 +1,5 @@
 {
-  "name": "@lunargorge/ng2-handy-grid",
+  "name": "ng2-handy-grid",
   "version": "1.0.1",
   "description": "Angular 2 grid",
   "keywords": [
@@ -12,6 +12,7 @@
   "homepage": "http://grid.diamondtower.pl/",
   "license": "MIT",
   "scripts": {
+    "pub": "tsc -p tsconfig-npm.json && npm publish",
     "build:dev": "webpack --config config/webpack.dev.js --progress --profile",
     "build:docker": "npm run build:prod && docker build -t angular2-webpack-start:latest .",
     "build:prod": "webpack --config config/webpack.prod.js  --progress --profile --bail",
@@ -61,6 +62,7 @@
     "webpack": "webpack"
   },
   "dependencies": {
+    "ng2-handy-syntax-highlighter": "^1.0.2"
   },
   "devDependencies": {
     "@angular/common": "2.2.1",
