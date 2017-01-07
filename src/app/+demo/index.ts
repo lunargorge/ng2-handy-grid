@@ -32,6 +32,6 @@ export const routesListingExampleModule: Routes = [
   ]
 })
 
-export default class ListingExampleModule {
+export class ListingExampleModule {
 
 }

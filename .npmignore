@@ -75,6 +75,7 @@ npm-debug.log
 /karma.conf.js
 /protractor.conf.js
 /tsconfig.json
+/tsconfig.webpack.json
 /tsconfig-npm.json
 /webpack.config.js
 /tslint.json
@@ -87,5 +88,10 @@ npm-debug.log
 *.swp
 
 # Ignored files #
+*.ngfactory.js
+*.aot.js
+*.aot.metadata.json
+*.ngsummary.json
+*.js.map
 *.ts
 !*.d.ts

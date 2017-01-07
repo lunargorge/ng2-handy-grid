@@ -8,9 +8,7 @@ export const ROUTES: Routes = [
   { path: 'home',  component: HomeComponent },
   { path: 'utils',  component: UtilsComponent },
   {
-    path: 'demo', loadChildren: () => System.import('./+demo').then((comp: any) => {
-      return comp.default;
-    })
+    path: 'demo', loadChildren: './+demo/index#ListingExampleModule'
   },
   { path: '**',    component: NoContentComponent },
 ];

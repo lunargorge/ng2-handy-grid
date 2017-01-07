@@ -54,6 +54,11 @@ npm-debug.log
 /.awcache
 .webpack.json
 /compiled/
+*.ngFactory.ts
+*.ngfactory.ts
+*.metadata.json
+*.ngsummary.json
+*.ngstyle.ts
 
 # Doc #
 /doc/
@@ -73,4 +78,8 @@ npm-debug.log
 /src/library/**/*.js
 *.map
 *.d.ts
+*.ngstyle.ts
+*.ngfactory.ts
+*.metadata.json
+*.ngsummary.json
 !/src/custom-typings.d.ts

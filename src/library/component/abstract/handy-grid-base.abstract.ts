@@ -7,10 +7,10 @@ import { HandyGridMode } from '../../enum/handy-grid-mode.enum';
  * Base class to grid component
  */
 export abstract class HandyGridBase {
+  public rows: HandyGridRow<any>[];
+  public columns: HandyGridColumn[];
+  public utils: HandyGridUtilsInterface;
   protected handyGridMode: number = HandyGridMode.ALL_DATA;
-  protected rows: HandyGridRow<any>[];
-  protected columns: HandyGridColumn[];
-  protected utils: HandyGridUtilsInterface;
 
   constructor() {
     let hgUtilsFactory: HandyGridUtilsFactory = new HandyGridUtilsFactory();
