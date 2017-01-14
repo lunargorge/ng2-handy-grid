@@ -54,11 +54,6 @@ npm-debug.log
 /.awcache
 .webpack.json
 /compiled/
-*.ngFactory.ts
-*.ngfactory.ts
-*.metadata.json
-*.ngsummary.json
-*.ngstyle.ts
 
 # Doc #
 /doc/
@@ -67,7 +62,7 @@ npm-debug.log
 .idea/
 *.swp
 
-# Ignored files #
+# Angular #
 /index.js
 /src/main.browser.js
 /src/vendor.browser.js
@@ -80,6 +75,7 @@ npm-debug.log
 *.d.ts
 *.ngstyle.ts
 *.ngfactory.ts
+*.ngFactory.ts
 *.metadata.json
 *.ngsummary.json
 !/src/custom-typings.d.ts
