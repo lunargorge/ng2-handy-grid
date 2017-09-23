@@ -1,11 +1,12 @@
 {
   "name": "ng2-handy-grid",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A set of classes to help you create and maintenance angular 2 datagrid.",
   "keywords": [
     "grid",
     "datagrid",
-    "angular2",
+    "angular",
+    "angular4",
     "webpack",
     "typescript"
   ],
