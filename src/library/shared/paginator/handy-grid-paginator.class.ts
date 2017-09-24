@@ -16,7 +16,7 @@ export class HandyGridPaginator {
     previous: 0,
     current: 1,
     next: 0,
-    last:0,
+    last: 0,
     pageCountAll: 10,
     pageCountDisplay: 5,
     itemCountPerPage: 10,

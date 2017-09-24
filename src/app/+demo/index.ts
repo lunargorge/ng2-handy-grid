@@ -26,7 +26,7 @@ export const routesListingExampleModule: Routes = [
     Ng2HandySyntaxHighlighterModule
   ],
   providers: [ UserService ],
-  declarations:[
+  declarations: [
     AGrid, ARowUser, BGrid, BRowUser,
     OneRequestAllDataDoc, RequestPerPageDoc
   ]

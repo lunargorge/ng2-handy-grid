@@ -15,8 +15,8 @@ export * from './shared';
     CommonModule
   ],
   providers: [ HandyGridUtilsFactory, HandyGridSortFactory ],
-  declarations:[],
-  exports:[],
+  declarations: [],
+  exports: [],
 })
 
 export class Ng2HandyGridModule {

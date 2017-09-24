@@ -16,8 +16,8 @@ export class HandyGridSort {
 
       if (column.type === 'date') {
         // firefox ma klopoty z obiektem Date, wiec porownujemy jako string
-        //prev = new Date(prev);
-        //curr = new Date(curr);
+        // prev = new Date(prev);
+        // curr = new Date(curr);
       }
 
       if (column.sort.hasOwnProperty('method')) {

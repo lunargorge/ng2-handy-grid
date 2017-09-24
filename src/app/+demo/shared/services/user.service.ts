@@ -1,6 +1,6 @@
 
-import { Observable } from "rxjs";
-import { User } from "../data/user.model";
+import { Observable } from 'rxjs';
+import { User } from '../data/user.model';
 
 // change to: import { ClassName } from 'ng2-handy-grid';
 import {

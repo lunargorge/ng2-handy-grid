@@ -1,5 +1,5 @@
 
-import { Component, Input } from "@angular/core";
+import { Component, Input } from '@angular/core';
 
 // change to: import { ClassName } from 'ng2-handy-grid';
 import { HandyGridColumn, HandyGridRow } from '../../../../../library';
