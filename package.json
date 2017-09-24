@@ -1,6 +1,6 @@
 {
   "name": "ng2-handy-grid",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A set of classes to help you create and maintenance angular (>= 2) datagrid.",
   "keywords": [
     "grid",
@@ -76,7 +76,8 @@
     "webpack-dev-server": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "webpack": "node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@angular/animations": "~4.3.1",
     "@angular/common": "~4.3.1",
     "@angular/compiler": "~4.3.1",
@@ -94,9 +95,7 @@
     "ie-shim": "^0.1.0",
     "reflect-metadata": "^0.1.10",
     "rxjs": "~5.0.2",
-    "zone.js": "0.8.14"
-  },
-  "devDependencies": {
+    "zone.js": "0.8.14",
     "@angular/compiler-cli": "~4.3.1",
     "@compodoc/compodoc": "^1.0.0-beta.15",
     "@types/hammerjs": "^2.0.34",
