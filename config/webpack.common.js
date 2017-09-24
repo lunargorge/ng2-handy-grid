@@ -32,7 +32,7 @@ const HMR = helpers.hasProcessFlag('hot');
 const AOT = process.env.BUILD_AOT || helpers.hasNpmFlag('aot');
 const METADATA = {
   title: 'Angular2 grid',
-  description: 'A set of classes to help you create and maintenance angular 2 datagrid.',
+  description: 'A set of classes to help you create and maintenance angular (> 2) datagrid.',
   baseUrl: '/',
   isDevServer: helpers.isWebpackDevServer(),
   HMR: HMR,
